@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchCraft | Premium Architectural Model Maker</title>
+    <meta name="description"
+        content="Professional freelance architectural model making services for architects and developers.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+                    <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img">
+                    Arch<span>Craft</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home 1</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-cta">Reach Me</a></li>
+                    <li class="mobile-rtl-link"><a href="#" id="rtl-toggle-mobile">RTL Mode</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="toggle-btn" title="Toggle Theme">🌙</button>
+                <button id="rtl-toggle" class="btn-rtl">RTL</button>
+                <div class="hamburger" id="hamburger">
+                    <span>☰</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section class="hero">
+            <div class="hero-bg"
+                style="background-image: url('https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg');">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="animate" data-animation="fade-in">Precision in Every Scale</h1>
+                <p class="animate" data-animation="slide-up">Transforming architectural visions into tangible
+                    masterpieces through meticulous craftsmanship and state-of-the-art materials.</p>
+                <div class="cta-btns animate" data-animation="slide-up">
+                    <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                    <a href="contact.html" class="btn btn-secondary">Request Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: About Preview -->
+        <section id="about">
+            <div class="container">
+            <div class="section-title">
+                <h2 class="animate" data-animation="slide-left">The Artisan's Touch</h2>
+            </div>
+            <div style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;" class="animate" data-animation="zoom-in">
+                    <img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg"
+                        alt="Craftsman working" style="border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                </div>
+                <div style="flex: 1; min-width: 300px;" class="animate" data-animation="slide-right">
+                    <h3>Crafting Legacies</h3>
+                    <p>With over a decade of experience in architectural modeling, I bridge the gap between digital
+                        design and physical reality. Each model is a testament to precision, capturing the essence of
+                        your project with unparalleled detail.</p>
+                    <p>From conceptual massing models to highly detailed presentation pieces, I specialize in bringing
+                        depth to architectural narratives.</p>
+                    <a href="about.html"
+                        style="color: var(--accent-color); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; margin-top: 20px; display: inline-block;">Learn
+                        More →</a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Services -->
+        <section id="services" style="background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="animate" data-animation="fade-in">Bespoke Services</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                    <div class="service-card animate" data-animation="slide-up">
+                        <div class="service-image">
+                            <img src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg"
+                                alt="Concept Models">
+                        </div>
+                        <div class="service-content">
+                            <h3>Concept Models</h3>
+                            <p>Rapid prototyping of architectural concepts using high-quality sustainable materials.</p>
+                        </div>
+                    </div>
+                    <div class="service-card animate" data-animation="slide-up">
+                        <div class="service-image">
+                            <img src="https://images.pexels.com/photos/2514002/pexels-photo-2514002.jpeg"
+                                alt="Urban Planning">
+                        </div>
+                        <div class="service-content">
+                            <h3>Urban Planning</h3>
+                            <p>Large-scale site models demonstrating urban integration and contextual relationships.</p>
+                        </div>
+                    </div>
+                    <div class="service-card animate" data-animation="slide-up">
+                        <div class="service-image">
+                            <img src="https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg"
+                                alt="Interior Detail">
+                        </div>
+                        <div class="service-content">
+                            <h3>Interior Detail</h3>
+                            <p>Meticulous interior cutaways showcasing textures, lighting, and spatial flow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Portfolio Preview -->
+        <section id="portfolio">
+            <div class="container">
+            <div class="section-title">
+                <h2 class="animate" data-animation="slide-right">Featured Works</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px;">
+                <div class="portfolio-item animate" data-animation="zoom-in"
+                    style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 4/3;">
+                    <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg" alt="Project 1"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: #fff;">
+                        <h4>The Glass Pavilion</h4>
+                        <p>Acrylic & Timber, 1:50</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate" data-animation="zoom-in"
+                    style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 4/3;">
+                    <img src="https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg" alt="Project 2"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: #fff;">
+                        <h4>Corporate HQ</h4>
+                        <p>3D Print & Laser Cut, 1:200</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate" data-animation="zoom-in"
+                    style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 4/3;">
+                    <img src="https://images.pexels.com/photos/434645/pexels-photo-434645.jpeg" alt="Project 3"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: #fff;">
+                        <h4>Urban Waterfront</h4>
+                        <p>Mixed Media, 1:500</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Process Timeline -->
+        <section id="process" style="background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="animate" data-animation="slide-left">How We Work</h2>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="display: flex; gap: 30px; margin-bottom: 40px;" class="animate"
+                        data-animation="slide-right">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">
+                            01</div>
+                        <div>
+                            <h3>Consultation</h3>
+                            <p>Discussing project scope, scale, and material requirements to align with your vision.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 30px; margin-bottom: 40px;" class="animate"
+                        data-animation="slide-left">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">
+                            02</div>
+                        <div>
+                            <h3>Digital Planning</h3>
+                            <p>Optimizing CAD/BIM files for physical fabrication using laser cutting and 3D printing.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 30px; margin-bottom: 40px;" class="animate"
+                        data-animation="slide-right">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">
+                            03</div>
+                        <div>
+                            <h3>Craftsmanship</h3>
+                            <p>The manual assembly and finishing process, where the model truly comes to life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+            <div class="section-title">
+                <h2 class="animate" data-animation="fade-in">Client Perspectives</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="testimonial-card animate" data-animation="zoom-in">
+                    <p style="font-style: italic; margin-bottom: 25px; line-height: 1.8;">"The level of detail achieved
+                        in our museum model was breathtaking. It became the centerpiece of our presentation."</p>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div class="testimonial-img">
+                            <img src="https://images.pexels.com/photos/1181682/pexels-photo-1181682.jpeg"
+                                alt="Sarah Jenkins">
+                        </div>
+                        <div>
+                            <strong style="display: block; font-size: 1.1rem;">Sarah Jenkins</strong>
+                            <span style="display: block; font-size: 0.85rem; color: var(--text-secondary);">Lead
+                                Architect, SJ Associates</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate" data-animation="zoom-in">
+                    <p style="font-style: italic; margin-bottom: 25px; line-height: 1.8;">"Reliable, precise, and
+                        professional. ArchCraft delivered ahead of schedule for our international design competition."
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div class="testimonial-img">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+                                alt="Marcus Thorne">
+                        </div>
+                        <div>
+                            <strong style="display: block; font-size: 1.1rem;">Marcus Thorne</strong>
+                            <span style="display: block; font-size: 0.85rem; color: var(--text-secondary);">Director,
+                                UrbanFlow Studios</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px; display: flex; align-items: center; gap: 12px;">
+                        <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img">
+                        Arch<span>Craft</span>
+                    </div>
+                    <p>Elevating architectural storytelling through physical precision.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📍 123 Artisan Way, Studio 4B</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ hello@archcraft.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon" title="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" title="Twitter">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ArchCraft Architectural Models. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">↑</button>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

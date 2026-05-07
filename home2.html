@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase | ArchCraft</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+                    <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img">
+                    Arch<span>Craft</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home2.html" class="active">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-cta">Reach Me</a></li>
+                    <li class="mobile-rtl-link"><a href="#" id="rtl-toggle-mobile">RTL Mode</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="toggle-btn">🌙</button>
+                <button id="rtl-toggle" class="btn-rtl">RTL</button>
+                <div class="hamburger" id="hamburger">
+                    <span>☰</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero (Split Layout) -->
+        <section class="hero" style="background: var(--bg-primary); color: var(--text-primary); text-align: left; justify-content: flex-start;">
+            <div style="display: flex; width: 100%; height: 100%;">
+                <div style="flex: 1; padding: 10% var(--space-md); z-index: 1;">
+                    <h1 class="animate" data-animation="slide-right" style="color: var(--text-primary); font-size: 3.5rem;">Materializing <br>Design Intent</h1>
+                    <p class="animate" data-animation="fade-in" style="color: var(--text-secondary); max-width: 500px; margin-bottom: 40px;">Explore the synergy between traditional craftsmanship and modern fabrication techniques.</p>
+                    <div class="cta-btns animate" data-animation="slide-up" style="justify-content: flex-start;">
+                        <a href="#materials" class="btn btn-primary">Explore Materials</a>
+                    </div>
+                </div>
+                <div style="flex: 1.5; position: relative;" class="animate" data-animation="fade-in">
+                    <img src="https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg" alt="Design tools" style="width: 100%; height: 100%; object-fit: cover; clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Material Library -->
+        <section id="materials">
+            <div class="container">
+            <div class="section-title">
+                <h2 class="animate" data-animation="zoom-in">Material Library</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div class="material-card animate" data-animation="slide-up" style="text-align: center;">
+                    <div style="aspect-ratio: 1; background: #eee; margin-bottom: 15px; border-radius: 4px; overflow: hidden;">
+                        <img src="https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg" alt="Wood" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h4>Natural Timber</h4>
+                </div>
+                <div class="material-card animate" data-animation="slide-up" style="text-align: center;">
+                    <div style="aspect-ratio: 1; background: #eee; margin-bottom: 15px; border-radius: 4px; overflow: hidden;">
+                        <img src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg" alt="Acrylic" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h4>Frosted Acrylic</h4>
+                </div>
+                <div class="material-card animate" data-animation="slide-up" style="text-align: center;">
+                    <div style="aspect-ratio: 1; background: #eee; margin-bottom: 15px; border-radius: 4px; overflow: hidden;">
+                        <img src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg" alt="Concrete" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h4>Architectural Plaster</h4>
+                </div>
+                <div class="material-card animate" data-animation="slide-up" style="text-align: center;">
+                    <div style="aspect-ratio: 1; background: #eee; margin-bottom: 15px; border-radius: 4px; overflow: hidden;">
+                        <img src="https://images.pexels.com/photos/220926/pexels-photo-220926.jpeg" alt="Metal" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h4>Etched Brass</h4>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Featured Projects (Infinite Scroll Style Grid) -->
+        <section id="featured" style="background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="animate" data-animation="fade-in">Innovation Showcase</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px;">
+                    <div class="animate" data-animation="slide-left">
+                        <div style="aspect-ratio: 16/10; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color);">
+                            <img src="https://images.pexels.com/photos/2119706/pexels-photo-2119706.jpeg" alt="Complex project" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3 style="margin-top: 25px; font-size: 1.5rem;">Dynamic Facades</h3>
+                        <p style="color: var(--text-secondary);">Experimental model exploring kinetic facade systems and sunlight interaction.</p>
+                    </div>
+                    <div class="animate" data-animation="slide-right">
+                        <div style="aspect-ratio: 16/10; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color);">
+                            <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Group project" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3 style="margin-top: 25px; font-size: 1.5rem;">Sustainability Hub</h3>
+                        <p style="color: var(--text-secondary);">Focusing on integrated green systems and ecological building practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Process Videos (Visual Placeholder) -->
+        <section id="videos">
+            <div class="container">
+            <div class="section-title">
+                <h2 class="animate" data-animation="zoom-in">The Workshop In Motion</h2>
+            </div>
+            <div style="position: relative; aspect-ratio: 16/9; background: #000; border-radius: 12px; overflow: hidden;" class="animate" data-animation="fade-in">
+                <img src="https://images.pexels.com/photos/3822843/pexels-photo-3822843.jpeg" alt="Video placeholder" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); cursor: pointer;">
+                    <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.2); backdrop-filter: blur(5px); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 0; height: 0; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-left: 25px solid #fff; margin-left: 5px;"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Tools & Techniques -->
+        <section id="tools" style="background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="animate" data-animation="slide-left">Precision Tools</h2>
+                </div>
+                <div style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;" class="animate" data-animation="slide-right">
+                        <h3>Hybrid Fabrication</h3>
+                        <p>We combine the latest in SLA/FDM 3D printing with traditional wood-turning and metalwork. Our workshop is equipped with industrial-grade laser cutters ensuring sub-millimeter accuracy for every component.</p>
+                        <ul style="margin-top: 20px;">
+                            <li>• CNC Milling for Site Topography</li>
+                            <li>• Vacuum Forming for Complex Curves</li>
+                            <li>• Hand-applied Architectural Finishes</li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1; min-width: 300px;" class="animate" data-animation="zoom-in">
+                        <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg" alt="Laser cutter" style="border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: CTA Section -->
+        <section id="cta-showcase" style="background: var(--accent-color); color: #fff; text-align: center;">
+            <div class="container">
+                <h2 class="animate" data-animation="zoom-in" style="font-size: 3rem; margin-bottom: var(--space-md);">Ready to Start Your Project?</h2>
+                <p class="animate" data-animation="fade-in" style="margin-bottom: var(--space-lg); max-width: 600px; margin-left: auto; margin-right: auto;">Let's collaborate to create a physical representation of your architectural vision.</p>
+                <div class="animate" data-animation="slide-up">
+                    <a href="contact.html" class="btn" style="background: #fff; color: var(--accent-color);">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px; display: flex; align-items: center; gap: 12px;">
+                        <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img">
+                        Arch<span>Craft</span>
+                    </div>
+                    <p>Elevating architectural storytelling through physical precision.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📍 123 Artisan Way, Studio 4B</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ hello@archcraft.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon" title="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" title="Twitter">
+                            <svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ArchCraft Architectural Models. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">↑</button>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

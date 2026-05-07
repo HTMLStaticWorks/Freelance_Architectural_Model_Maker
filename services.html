@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | ArchCraft</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+                    <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img">
+                    Arch<span>Craft</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-cta">Reach Me</a></li>
+                    <li class="mobile-rtl-link"><a href="#" id="rtl-toggle-mobile">RTL Mode</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="toggle-btn">🌙</button>
+                <button id="rtl-toggle" class="btn-rtl">RTL</button>
+                <div class="hamburger" id="hamburger">
+                    <span>☰</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section class="hero hero-inner">
+            <div class="hero-bg"
+                style="background-image: url('https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg');">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="animate" data-animation="fade-in">Crafting Dimensions</h1>
+                <p class="animate" data-animation="slide-up">
+                    Comprehensive architectural modeling solutions tailored to your design requirements.<br>
+                    We blend traditional artisan skills with advanced digital fabrication to bring physical depth to
+                    your architectural narratives.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2: Core Services Details -->
+        <section>
+            <div class="container">
+            <div class="section-title">
+                <h2 class="animate" data-animation="slide-right">Specialized Solutions</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <div class="service-card animate" data-animation="slide-up">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg"
+                            alt="Massing Models">
+                    </div>
+                    <div class="service-content">
+                        <h3>Massing Models</h3>
+                        <p>Focusing on form, volume, and urban context. Ideal for early-stage design approvals and
+                            spatial analysis.</p>
+                    </div>
+                </div>
+                <div class="service-card animate" data-animation="slide-up">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg"
+                            alt="Marketing Models">
+                    </div>
+                    <div class="service-content">
+                        <h3>Marketing Models</h3>
+                        <p>High-fidelity presentation models with lighting, landscaping, and realistic material
+                            representations.</p>
+                    </div>
+                </div>
+                <div class="service-card animate" data-animation="slide-up">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg"
+                            alt="Structural Cutaways">
+                    </div>
+                    <div class="service-content">
+                        <h3>Structural Cutaways</h3>
+                        <p>Exposing the internal engineering and spatial relationships of complex architectural systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Material Consulting -->
+        <section style="background: var(--bg-secondary);">
+            <div class="container" style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;" class="animate" data-animation="slide-left">
+                    <h2>Material Consulting</h2>
+                    <p>Choosing the right material is crucial for conveying design intent. We offer guidance on
+                        selecting between traditional hardwoods, contemporary polymers, and experimental composites.</p>
+                    <div style="margin-top: 30px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                            <div
+                                style="width: 20px; height: 20px; background: var(--accent-color); border-radius: 50%;">
+                            </div>
+                            <span>Sustainable Source Timber</span>
+                        </div>
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                            <div
+                                style="width: 20px; height: 20px; background: var(--accent-color); border-radius: 50%;">
+                            </div>
+                            <span>UV-Resistant Resin Prints</span>
+                        </div>
+                        <div style="display: flex; gap: 15px;">
+                            <div
+                                style="width: 20px; height: 20px; background: var(--accent-color); border-radius: 50%;">
+                            </div>
+                            <span>Precision Etched Metals</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="flex: 1; min-width: 300px;" class="animate" data-animation="zoom-in">
+                    <img src="https://images.pexels.com/photos/7505172/pexels-photo-7505172.jpeg" alt="Materials"
+                        style="border-radius: 12px; box-shadow: 0 30px 60px rgba(0,0,0,0.15);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Workflow FAQ -->
+        <section>
+            <div class="container">
+            <div class="section-title">
+                <h2 class="animate" data-animation="zoom-in">Engagement Process</h2>
+            </div>
+            <div class="dropdown-container">
+                <details class="dropdown-item animate" data-animation="slide-up">
+                    <summary>What files are required?</summary>
+                    <p>We primarily work with .3dm (Rhino), .rvt (Revit), and .dwg files. High-resolution PDFs of plans
+                        and elevations are also helpful for double-checking fine details.</p>
+                </details>
+                <details class="dropdown-item animate" data-animation="slide-up">
+                    <summary>What is the typical lead time?</summary>
+                    <p>Lead times vary by complexity. Concept massing models typically take 2 weeks, while highly
+                        detailed marketing or presentation models can take 4-8 weeks depending on the level of detail
+                        required.</p>
+                </details>
+                <details class="dropdown-item animate" data-animation="slide-up">
+                    <summary>Do you offer international shipping?</summary>
+                    <p>Yes, we provide secure, custom-crated shipping worldwide. We use white-glove delivery partners to
+                        ensure your model arrives in perfect condition, regardless of its destination.</p>
+                </details>
+                <details class="dropdown-item animate" data-animation="slide-up">
+                    <summary>How do I request a quote?</summary>
+                    <p>Simply navigate to our Contact page and provide your project details, including scale, preferred
+                        materials, and any deadline constraints. We will provide a detailed proposal within 48 hours.
+                    </p>
+                </details>
+            </div>
+            </div>
+        </section>
+
+        <!-- Section 5: CTA -->
+        <section style="background: var(--primary-color); color: var(--bg-primary); text-align: center;">
+            <div class="container">
+                <h2 class="animate" data-animation="zoom-in">Ready to define your scale?</h2>
+                <p style="margin-bottom: 30px; opacity: 0.8;">Contact us for a detailed consultation and quotation.</p>
+                <a href="contact.html" class="btn btn-primary animate" data-animation="slide-up">Start Your Project</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px; display: flex; align-items: center; gap: 12px;">
+                        <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img">
+                        Arch<span>Craft</span>
+                    </div>
+                    <p>Elevating architectural storytelling through physical precision.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📍 123 Artisan Way, Studio 4B</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ hello@archcraft.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon" title="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" title="Twitter">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ArchCraft Architectural Models. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">↑</button>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

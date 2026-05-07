@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ArchCraft</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: var(--bg-secondary);
+            padding: 20px;
+        }
+        
+        .auth-card {
+            background: var(--bg-primary);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: inherit;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px rgba(197, 160, 89, 0.1);
+        }
+        
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 38px;
+            cursor: pointer;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            user-select: none;
+        }
+        
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 0.85rem;
+        }
+        
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+        
+        .forgot-password {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+        
+        .auth-btn {
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .social-login {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .social-login p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: var(--transition);
+            cursor: pointer;
+            background: var(--bg-primary);
+        }
+        
+        .social-icon:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .auth-links {
+            margin-top: 25px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .auth-links a {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        
+        .toggles {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="toggles">
+        <button id="theme-toggle" class="toggle-btn">🌙</button>
+        <button id="rtl-toggle" class="toggle-btn">🌐</button>
+    </div>
+
+    <div class="auth-card">
+        <div class="logo" style="justify-content: center; margin-bottom: 30px; gap: 12px;">
+            <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+                <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img">
+                Arch<span>Craft</span>
+            </a>
+        </div>
+        <h2>Welcome Back</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 35px;">Access your project dashboard</p>
+        
+        <form action="dashboard.html" id="loginForm">
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="name@company.com" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+                <span class="toggle-password" data-target="#password">👁️</span>
+            </div>
+            
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox"> Remember Me
+                </label>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+            
+            <button type="submit" class="btn btn-primary auth-btn">Login to Dashboard</button>
+        </form>
+        
+        <div class="social-login">
+            <p>Or login with</p>
+            <div class="social-icons">
+                <div class="social-icon" title="Google">
+                    <svg width="20" height="20" viewBox="0 0 24 24">
+                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
+                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                    </svg>
+                </div>
+                <div class="social-icon" title="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#1877F2">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </div>
+                <div class="social-icon" title="Apple">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.05 20.28c-.98.95-2.05 1.61-3.22 1.61-1.23 0-1.63-.74-3.1-.74-1.46 0-1.94.72-3.05.74-1.15.02-2.35-.83-3.46-2.39-2.27-3.2-1.95-8.4 1.25-10.45 1.15-.74 2.45-1.07 3.6-.98 1.48.11 2.38.74 3.1.74.65 0 1.87-.87 3.6-.87 1.36 0 2.64.63 3.43 1.78-2.7 1.6-2.26 5.4.45 6.64-.78 2-1.84 3.98-3.1 5.92zm-4.75-14.73c.12-2.34-1.88-4.43-4.14-4.55-.17 2.37 2.15 4.5 4.14 4.55z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="auth-links">
+            Don't have an account? <a href="signup.html">Request Access</a>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
