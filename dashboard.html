@@ -11,7 +11,6 @@
             display: grid;
             grid-template-columns: 250px 1fr;
             min-height: 100vh;
-            padding-top: 80px;
         }
         
         .sidebar {
@@ -38,8 +37,12 @@
         }
         
         .dashboard-main {
-            padding: var(--space-lg);
+            padding: 0;
             background: var(--bg-primary);
+        }
+
+        .dashboard-content-wrapper {
+            padding: var(--space-lg);
         }
         
         .stats-grid {
@@ -125,167 +128,243 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header id="main-header">
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
-                    <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img">
-                    Arch<span>Craft</span>
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home 1</a></li>
-                    <li><a href="home2.html">Home 2</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <button id="theme-toggle" class="toggle-btn">🌙</button>
-                <a href="index.html" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.9rem;">Logout</a>
-            </div>
-        </div>
-    </header>
 
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
     <div class="dashboard-container">
         <aside class="sidebar">
-            <div style="margin-bottom: 40px; text-align: center;">
-                <div style="width: 80px; height: 80px; background: #eee; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem;">👤</div>
-                <h4 id="user-name">Client Name</h4>
-                <p style="font-size: 0.8rem; color: var(--text-secondary);">Premium Account</p>
+            <div class="sidebar-close" id="sidebar-close">&times;</div>
+            <div class="sidebar-logo">
+                <div class="logo">
+                    <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+                        <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img" style="width: 35px;">
+                        <span style="font-size: 1.2rem; font-weight: 700;">Arch<span style="color: var(--accent-color);">Craft</span></span>
+                    </a>
+                </div>
             </div>
             <ul>
-                <li><a href="#" class="active">Overview</a></li>
-                <li><a href="#upload">Upload Files</a></li>
-                <li><a href="#materials">Materials</a></li>
-                <li><a href="#progress">Progress</a></li>
-                <li><a href="#messages">Messages</a></li>
-                <li><a href="#settings">Settings</a></li>
+                <li><a href="#overview" class="active" data-section="overview">Overview</a></li>
+                <li><a href="#upload" data-section="upload">Upload Files</a></li>
+                <li><a href="#materials" data-section="materials">Materials</a></li>
+                <li><a href="#progress" data-section="progress">Progress</a></li>
+                <li><a href="#messages" data-section="messages">Messages</a></li>
+                <li><a href="#settings" data-section="settings">Settings</a></li>
+                <li style="margin-top: 50px; border-top: 1px solid var(--border-color); padding-top: 20px;">
+                    <a href="index.html" style="color: var(--accent-color); font-weight: 600;">LOGOUT</a>
+                </li>
             </ul>
         </aside>
 
         <main class="dashboard-main">
-            <div class="animate" data-animation="fade-in">
-                <h2>Project Overview: The Crystal Tower</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 30px;">Last updated: Today at 2:45 PM</p>
+            <header class="dashboard-header">
+                <div class="dashboard-header-top">
+                    <div class="dashboard-hamburger" id="dashboard-hamburger">
+                        <span>☰</span>
+                    </div>
+                    <div class="dashboard-controls-mobile" style="display: flex; gap: 10px; align-items: center;">
+                        <button id="theme-toggle" class="toggle-btn" title="Toggle Theme" style="font-size: 1.2rem; background: none; border: none; cursor: pointer;">🌙</button>
+                        <button id="rtl-toggle" class="btn-rtl" style="padding: 6px 12px; font-size: 0.8rem; border: 1px solid var(--border-color); background: var(--accent-color); color: #fff; border-radius: 4px; cursor: pointer;">RTL</button>
+                    </div>
+                </div>
+
+                <div class="welcome-text">
+                    <h2 style="font-size: 1.2rem; margin: 0; font-weight: 600;">Welcome Back, <span style="color: var(--accent-color);">Client Name</span></h2>
+                </div>
+
+                <div class="dashboard-user-section">
+                    <div class="dashboard-user-info">
+                        <div class="user-avatar">CN</div>
+                        <span style="font-weight: 500; font-size: 0.9rem; color: var(--text-primary);">Client Name</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content-wrapper">
+                <!-- Section: Overview -->
+            <div id="overview" class="dashboard-content active">
+                <div class="section-header">
+                    <h2>Project Overview: The Crystal Tower</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 30px;">Last updated: Today at 2:45 PM</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>Status</h3>
+                            <div class="value" style="color: #27ae60;">In Progress</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Scale</h3>
+                            <div class="value">1:200</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Milestones</h3>
+                            <div class="value">4 / 7</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Est. Completion</h3>
+                            <div class="value">May 24</div>
+                        </div>
+                    </div>
+
+                    <div id="shipping-preview" style="margin-top: 40px; padding: 30px; background: var(--bg-secondary); border-radius: 8px;">
+                        <h3>Shipping Status</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; flex-wrap: wrap; gap: 20px;">
+                            <div><strong>Service:</strong> White Glove Courier</div>
+                            <div><strong>Tracking:</strong> ARC-987-X23</div>
+                            <div style="background: var(--accent-color); color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">Pending</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: Upload Files -->
+            <div id="upload" class="dashboard-content">
+                <h2>Upload Project Files</h2>
+                <p style="margin-bottom: 30px;">Provide your 3D models and technical drawings for review.</p>
                 
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <h3>Status</h3>
-                        <div class="value" style="color: #27ae60;">In Progress</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Scale</h3>
-                        <div class="value">1:200</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Milestones</h3>
-                        <div class="value">4 / 7</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Est. Completion</h3>
-                        <div class="value">May 24</div>
-                    </div>
+                <div class="upload-area">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">📤</div>
+                    <p>Drag and drop your files here or <strong>browse</strong></p>
+                    <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 10px;">Support for .OBJ, .STL, .3DM, and .RVT (Max 500MB)</p>
                 </div>
 
-                <div id="upload" style="margin-top: 60px;">
-                    <h3>Upload 3D Files</h3>
-                    <p style="margin-bottom: 20px;">Support for .OBJ, .STL, .3DM, and .RVT files</p>
-                    <div class="upload-area">
-                        <div style="font-size: 3rem; margin-bottom: 10px;">📤</div>
-                        <p>Drag and drop your files here or <strong>browse</strong></p>
-                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 10px;">Maximum file size: 500MB</p>
+                <div style="margin-top: 40px;">
+                    <h3>Recent Uploads</h3>
+                    <table style="width: 100%; margin-top: 20px; border-collapse: collapse;">
+                        <thead>
+                            <tr style="text-align: left; border-bottom: 1px solid var(--border-color);">
+                                <th style="padding: 10px 0;">Filename</th>
+                                <th style="padding: 10px 0;">Size</th>
+                                <th style="padding: 10px 0;">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 15px 0;">CrystalTower_V3.stl</td>
+                                <td>45.2 MB</td>
+                                <td style="color: #27ae60;">Verified</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 15px 0;">Base_Topography.dwg</td>
+                                <td>12.8 MB</td>
+                                <td style="color: #27ae60;">Verified</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Section: Materials -->
+            <div id="materials" class="dashboard-content">
+                <h2>Material Specifications</h2>
+                <p style="margin-bottom: 30px;">Detailed list of materials selected for your physical model.</p>
+                
+                <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="stat-card">
+                        <div style="width: 100%; height: 120px; background: #eee; border-radius: 4px; margin-bottom: 15px; overflow: hidden;">
+                            <img src="https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <h4>Natural Oak</h4>
+                        <p style="font-size: 0.9rem;">Primary base material with satin finish.</p>
+                    </div>
+                    <div class="stat-card">
+                        <div style="width: 100%; height: 120px; background: #eee; border-radius: 4px; margin-bottom: 15px; overflow: hidden;">
+                            <img src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <h4>Frosted Acrylic</h4>
+                        <p style="font-size: 0.9rem;">Used for facade glazing elements.</p>
+                    </div>
+                    <div class="stat-card">
+                        <div style="width: 100%; height: 120px; background: #eee; border-radius: 4px; margin-bottom: 15px; overflow: hidden;">
+                            <img src="https://images.pexels.com/photos/220926/pexels-photo-220926.jpeg" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <h4>Etched Brass</h4>
+                        <p style="font-size: 0.9rem;">Intricate structural detailing.</p>
                     </div>
                 </div>
+            </div>
 
-                <div id="progress" class="progress-timeline">
-                    <h3>Production Progress</h3>
+            <!-- Section: Progress -->
+            <div id="progress" class="dashboard-content">
+                <h2>Production Timeline</h2>
+                <p style="margin-bottom: 30px;">Track the step-by-step creation of your architectural model.</p>
+                
+                <div class="progress-timeline">
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
+                            <span style="font-size: 0.8rem; color: var(--accent-color); font-weight: 600;">MAY 05, 2026</span>
                             <h4>Base Structure Completed</h4>
                             <p>The CNC-milled site topography has been finished and prepared for assembly.</p>
-                            <img src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg" alt="Progress 1" style="width: 200px; margin-top: 15px; border-radius: 4px;">
+                            <img src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg" alt="Progress 1" style="width: 300px; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border-color);">
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot" style="background: #ddd;"></div>
                         <div class="timeline-content" style="opacity: 0.6;">
+                            <span style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 600;">UPCOMING</span>
                             <h4>Facade Fabrication</h4>
-                            <p>3D printing of the intricate facade panels is scheduled for tomorrow.</p>
+                            <p>3D printing of the intricate facade panels is scheduled for the next phase.</p>
                         </div>
-                    </div>
-                </div>
-
-                <div id="shipping" style="margin-top: 60px; padding: 30px; background: var(--bg-secondary); border-radius: 8px;">
-                    <h3>Shipping Status</h3>
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
-                        <div>
-                            <strong>Service:</strong> White Glove Courier
-                        </div>
-                        <div>
-                            <strong>Tracking:</strong> ARC-987-X23
-                        </div>
-                        <div style="background: var(--accent-color); color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">Pending</div>
                     </div>
                 </div>
             </div>
+
+            <!-- Section: Messages -->
+            <div id="messages" class="dashboard-content">
+                <h2>Artisan Correspondence</h2>
+                <p style="margin-bottom: 30px;">Direct communication with your lead model maker.</p>
+                
+                <div style="background: var(--bg-secondary); border-radius: 12px; padding: 30px; border: 1px solid var(--border-color);">
+                    <div style="margin-bottom: 30px;">
+                        <div style="display: flex; gap: 15px; align-items: flex-start; margin-bottom: 20px;">
+                            <div style="width: 40px; height: 40px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">A</div>
+                            <div style="background: var(--bg-primary); padding: 15px; border-radius: 0 12px 12px 12px; border: 1px solid var(--border-color);">
+                                <p style="font-size: 0.95rem; margin-bottom: 5px;">Hi there! We've just finished the base topography. The scale looks perfect. Shall we proceed with the brass etching for the structure?</p>
+                                <span style="font-size: 0.75rem; color: var(--text-secondary);">10:30 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="border-top: 1px solid var(--border-color); padding-top: 20px;">
+                        <textarea placeholder="Type your message here..." style="width: 100%; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: 15px; color: var(--text-primary); font-family: inherit; margin-bottom: 15px; resize: none;" rows="3"></textarea>
+                        <button class="btn btn-primary">Send Message</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: Settings -->
+            <div id="settings" class="dashboard-content">
+                <h2>Account Settings</h2>
+                <p style="margin-bottom: 30px;">Manage your profile and notification preferences.</p>
+                
+                <div style="max-width: 600px;">
+                    <div class="form-group" style="margin-bottom: 25px;">
+                        <label>Display Name</label>
+                        <input type="text" value="Client Name" style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 4px; background: var(--bg-primary); color: var(--text-primary);">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 25px;">
+                        <label>Email Address</label>
+                        <input type="email" value="client@example.com" style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 4px; background: var(--bg-primary); color: var(--text-primary);">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 25px;">
+                        <label>Notification Preferences</label>
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <label style="display: flex; align-items: center; gap: 10px; font-weight: 400;">
+                                <input type="checkbox" checked> Email alerts for progress updates
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 10px; font-weight: 400;">
+                                <input type="checkbox" checked> SMS notifications for shipping
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+            </div> <!-- End content wrapper -->
         </main>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="logo" style="margin-bottom: 20px; display: flex; align-items: center; gap: 12px;">
-                        <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img">
-                        Arch<span>Craft</span>
-                    </div>
-                    <p>Elevating architectural storytelling through physical precision.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li>📍 123 Artisan Way, Studio 4B</li>
-                        <li>📞 +1 (555) 123-4567</li>
-                        <li>✉️ hello@archcraft.com</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="footer-socials">
-                        <a href="#" class="social-icon" title="Instagram">
-                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                        </a>
-                        <a href="#" class="social-icon" title="LinkedIn">
-                            <svg viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                        </a>
-                        <a href="#" class="social-icon" title="Twitter">
-                            <svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 ArchCraft Architectural Models. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+
 
     <button id="back-to-top" title="Back to Top">↑</button>
     <script src="assets/js/main.js"></script>

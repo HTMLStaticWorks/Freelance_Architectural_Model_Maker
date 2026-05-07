@@ -24,7 +24,9 @@
                     <li><a href="about.html" class="active">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html" class="nav-cta">Reach Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html" class="nav-cta">Login</a></li>
                     <li class="mobile-rtl-link"><a href="#" id="rtl-toggle-mobile">RTL Mode</a></li>
                 </ul>
             </nav>
@@ -55,13 +57,13 @@
         <!-- Section 2: Introduction Section -->
         <section id="introduction">
             <div class="container">
-                <div style="display: flex; gap: 60px; align-items: center; flex-wrap: wrap;">
+                <div class="img-first-stack">
                     <div style="flex: 1; min-width: 300px;" class="animate" data-animation="slide-left">
-                        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">The Artisan's Dedication</h2>
-                        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 20px;">
+                        <h2 class="section-title-alt">The Artisan's Dedication</h2>
+                        <p>
                             Founded on a passion for detail and a deep understanding of architectural language, ArchCraft has been at the forefront of physical modeling for over a decade. I believe that while digital renders provide a glimpse, a physical model provides a soul to an architectural project.
                         </p>
-                        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                        <p>
                             Every cut, every joint, and every material choice is made with the singular goal of capturing the essence of your design intent. We bridge the gap between abstract concept and tangible reality.
                         </p>
                     </div>
@@ -78,7 +80,7 @@
                 <div class="section-title">
                     <h2 class="animate" data-animation="fade-in">Expertise & Craft</h2>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div class="skills-grid">
                     <div class="service-card animate" data-animation="slide-up">
                         <div class="service-content">
                             <div style="font-size: 2.5rem; margin-bottom: 15px; color: var(--accent-color);">📏</div>
@@ -119,29 +121,29 @@
                 </div>
                 <div style="max-width: 900px; margin: 0 auto; position: relative; padding: 40px 0;">
                     <div style="display: flex; flex-direction: column; gap: 60px;">
-                        <div style="display: flex; gap: 40px; align-items: flex-start;" class="animate" data-animation="slide-left">
-                            <div style="width: 60px; height: 60px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 1.5rem;">01</div>
+                        <div class="process-item animate" data-animation="slide-left">
+                            <div class="step-num" style="width: 60px; height: 60px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 1.5rem;">01</div>
                             <div>
                                 <h3 style="margin-bottom: 10px;">Concept Consultation</h3>
                                 <p style="color: var(--text-secondary);">Understanding your vision, project scope, and the story you want the model to tell.</p>
                             </div>
                         </div>
-                        <div style="display: flex; gap: 40px; align-items: flex-start;" class="animate" data-animation="slide-right">
-                            <div style="width: 60px; height: 60px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 1.5rem;">02</div>
+                        <div class="process-item animate" data-animation="slide-right">
+                            <div class="step-num" style="width: 60px; height: 60px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 1.5rem;">02</div>
                             <div>
                                 <h3 style="margin-bottom: 10px;">Digital Preparation</h3>
                                 <p style="color: var(--text-secondary);">Transforming architectural drawings into fabrication-ready digital files for precision cutting.</p>
                             </div>
                         </div>
-                        <div style="display: flex; gap: 40px; align-items: flex-start;" class="animate" data-animation="slide-left">
-                            <div style="width: 60px; height: 60px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 1.5rem;">03</div>
+                        <div class="process-item animate" data-animation="slide-left">
+                            <div class="step-num" style="width: 60px; height: 60px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 1.5rem;">03</div>
                             <div>
                                 <h3 style="margin-bottom: 10px;">Material Selection</h3>
                                 <p style="color: var(--text-secondary);">Choosing the right materials that best reflect the textures and finishes of the building.</p>
                             </div>
                         </div>
-                        <div style="display: flex; gap: 40px; align-items: flex-start;" class="animate" data-animation="slide-right">
-                            <div style="width: 60px; height: 60px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 1.5rem;">04</div>
+                        <div class="process-item animate" data-animation="slide-right">
+                            <div class="step-num" style="width: 60px; height: 60px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 1.5rem;">04</div>
                             <div>
                                 <h3 style="margin-bottom: 10px;">Artisanal Build</h3>
                                 <p style="color: var(--text-secondary);">The manual assembly phase, where precision components are meticulously crafted into a whole.</p>
@@ -165,18 +167,18 @@
                 <div class="section-title">
                     <h2 class="animate" data-animation="zoom-in">The Studio Environment</h2>
                 </div>
-                <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; align-items: center;">
+                <div class="studio-wrapper">
                     <div class="animate" data-animation="slide-left">
-                        <img src="https://images.pexels.com/photos/3822843/pexels-photo-3822843.jpeg" alt="Studio view" style="border-radius: 12px; width: 100%;">
+                        <img src="https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg" alt="Precision Studio" style="border-radius: 12px; width: 100%; box-shadow: 0 30px 60px rgba(0,0,0,0.2);">
                     </div>
                     <div class="animate" data-animation="slide-right">
-                        <h3 style="font-size: 2rem; margin-bottom: 20px;">Precision Laboratory</h3>
-                        <p style="color: var(--text-secondary); margin-bottom: 20px;">Our studio is a hybrid space—part traditional woodshop, part advanced tech lab. We utilize high-grade laser cutters and SLA 3D printers alongside hand-tools that have been passed down for generations.</p>
-                        <div style="display: flex; flex-wrap: wrap; gap: 15px;">
-                            <div style="padding: 10px 20px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 4px; font-weight: 500;">Laser Cutting</div>
-                            <div style="padding: 10px 20px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 4px; font-weight: 500;">3D Printing</div>
-                            <div style="padding: 10px 20px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 4px; font-weight: 500;">CNC Milling</div>
-                            <div style="padding: 10px 20px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 4px; font-weight: 500;">Hand Finishing</div>
+                        <h3 style="margin-bottom: 20px;">Precision Laboratory</h3>
+                        <p>Our studio is a hybrid space—part traditional woodshop, part advanced tech lab. We utilize high-grade laser cutters and SLA 3D printers alongside hand-tools that have been passed down for generations.</p>
+                        <div class="lab-grid">
+                            <div class="lab-tag">Laser Cutting</div>
+                            <div class="lab-tag">3D Printing</div>
+                            <div class="lab-tag">CNC Milling</div>
+                            <div class="lab-tag">Hand Finishing</div>
                         </div>
                     </div>
                 </div>
@@ -223,7 +225,7 @@
                             <svg viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
                         </a>
                         <a href="#" class="social-icon" title="Twitter">
-                            <svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
                         </a>
                     </div>
                 </div>

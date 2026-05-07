@@ -28,7 +28,9 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html" class="nav-cta">Reach Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html" class="nav-cta">Login</a></li>
                     <li class="mobile-rtl-link"><a href="#" id="rtl-toggle-mobile">RTL Mode</a></li>
                 </ul>
             </nav>
@@ -66,7 +68,7 @@
             <div class="section-title">
                 <h2 class="animate" data-animation="slide-left">The Artisan's Touch</h2>
             </div>
-            <div style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
+            <div class="row-to-col animate" data-animation="fade-in">
                 <div style="flex: 1; min-width: 300px;" class="animate" data-animation="zoom-in">
                     <img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg"
                         alt="Craftsman working" style="border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
@@ -78,9 +80,7 @@
                         your project with unparalleled detail.</p>
                     <p>From conceptual massing models to highly detailed presentation pieces, I specialize in bringing
                         depth to architectural narratives.</p>
-                    <a href="about.html"
-                        style="color: var(--accent-color); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; margin-top: 20px; display: inline-block;">Learn
-                        More →</a>
+                    <a href="about.html" class="link-arrow">Learn More →</a>
                 </div>
             </div>
             </div>
@@ -175,20 +175,16 @@
                     <h2 class="animate" data-animation="slide-left">How We Work</h2>
                 </div>
                 <div style="max-width: 800px; margin: 0 auto;">
-                    <div style="display: flex; gap: 30px; margin-bottom: 40px;" class="animate"
-                        data-animation="slide-right">
-                        <div
-                            style="width: 50px; height: 50px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">
+                    <div class="process-item animate" data-animation="slide-right">
+                        <div class="step-num">
                             01</div>
                         <div>
                             <h3>Consultation</h3>
                             <p>Discussing project scope, scale, and material requirements to align with your vision.</p>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 30px; margin-bottom: 40px;" class="animate"
-                        data-animation="slide-left">
-                        <div
-                            style="width: 50px; height: 50px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">
+                    <div class="process-item animate" data-animation="slide-left">
+                        <div class="step-num">
                             02</div>
                         <div>
                             <h3>Digital Planning</h3>
@@ -196,10 +192,8 @@
                             </p>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 30px; margin-bottom: 40px;" class="animate"
-                        data-animation="slide-right">
-                        <div
-                            style="width: 50px; height: 50px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">
+                    <div class="process-item animate" data-animation="slide-right">
+                        <div class="step-num">
                             03</div>
                         <div>
                             <h3>Craftsmanship</h3>
@@ -297,10 +291,7 @@
                             </svg>
                         </a>
                         <a href="#" class="social-icon" title="Twitter">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                            </svg>
+                            <svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
                         </a>
                     </div>
                 </div>

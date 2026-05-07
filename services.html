@@ -26,7 +26,9 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html" class="active">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html" class="nav-cta">Reach Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html" class="nav-cta">Login</a></li>
                     <li class="mobile-rtl-link"><a href="#" id="rtl-toggle-mobile">RTL Mode</a></li>
                 </ul>
             </nav>
@@ -63,7 +65,7 @@
             <div class="section-title">
                 <h2 class="animate" data-animation="slide-right">Specialized Solutions</h2>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px;">
+            <div class="services-grid">
                 <div class="service-card animate" data-animation="slide-up">
                     <div class="service-image">
                         <img src="https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg"
@@ -108,26 +110,11 @@
                     <h2>Material Consulting</h2>
                     <p>Choosing the right material is crucial for conveying design intent. We offer guidance on
                         selecting between traditional hardwoods, contemporary polymers, and experimental composites.</p>
-                    <div style="margin-top: 30px;">
-                        <div style="display: flex; gap: 15px; margin-bottom: 15px;">
-                            <div
-                                style="width: 20px; height: 20px; background: var(--accent-color); border-radius: 50%;">
-                            </div>
-                            <span>Sustainable Source Timber</span>
-                        </div>
-                        <div style="display: flex; gap: 15px; margin-bottom: 15px;">
-                            <div
-                                style="width: 20px; height: 20px; background: var(--accent-color); border-radius: 50%;">
-                            </div>
-                            <span>UV-Resistant Resin Prints</span>
-                        </div>
-                        <div style="display: flex; gap: 15px;">
-                            <div
-                                style="width: 20px; height: 20px; background: var(--accent-color); border-radius: 50%;">
-                            </div>
-                            <span>Precision Etched Metals</span>
-                        </div>
-                    </div>
+                    <ul class="custom-list">
+                        <li>Sustainable Source Timber</li>
+                        <li>UV-Resistant Resin Prints</li>
+                        <li>Precision Etched Metals</li>
+                    </ul>
                 </div>
                 <div style="flex: 1; min-width: 300px;" class="animate" data-animation="zoom-in">
                     <img src="https://images.pexels.com/photos/7505172/pexels-photo-7505172.jpeg" alt="Materials"
@@ -170,11 +157,11 @@
         </section>
 
         <!-- Section 5: CTA -->
-        <section style="background: var(--primary-color); color: var(--bg-primary); text-align: center;">
+        <section style="background: var(--accent-color); color: #fff; text-align: center;">
             <div class="container">
                 <h2 class="animate" data-animation="zoom-in">Ready to define your scale?</h2>
-                <p style="margin-bottom: 30px; opacity: 0.8;">Contact us for a detailed consultation and quotation.</p>
-                <a href="contact.html" class="btn btn-primary animate" data-animation="slide-up">Start Your Project</a>
+                <p style="margin-bottom: 30px;">Contact us for a detailed consultation and quotation.</p>
+                <a href="contact.html" class="btn btn-light animate" data-animation="slide-up">Start Your Project</a>
             </div>
         </section>
     </main>
@@ -224,10 +211,7 @@
                             </svg>
                         </a>
                         <a href="#" class="social-icon" title="Twitter">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                            </svg>
+                            <svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
                         </a>
                     </div>
                 </div>
