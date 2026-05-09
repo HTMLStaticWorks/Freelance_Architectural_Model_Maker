@@ -188,7 +188,6 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
     font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -206,6 +205,7 @@ header {
     width: auto;
     object-fit: contain;
     display: block;
+    margin-inline-end: 12px;
 }
 
 nav ul {
@@ -686,6 +686,45 @@ p {
     position: sticky;
     top: 0;
     z-index: 100;
+    transition: var(--transition);
+}
+
+.welcome-greeting {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.dashboard-hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--text-primary);
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    line-height: 1;
+    transition: var(--transition);
+}
+
+.dashboard-hamburger:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+@media (max-width: 992px) {
+    .dashboard-header {
+        padding: 0 var(--space-md);
+    }
+    
+    .welcome-greeting {
+        font-size: 1.4rem;
+    }
+    
+    .dashboard-hamburger {
+        display: block;
+    }
 }
 
 .dashboard-controls {
@@ -1331,6 +1370,33 @@ main {
     line-height: 1.6;
 }
 
+.portfolio-card {
+    text-align: center;
+    transition: var(--transition);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-card h3 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: var(--text-primary);
+}
+
+.portfolio-card p {
+    color: var(--text-secondary);
+    margin-top: 5px;
+}
+
 /* Testimonials */
 .testimonial-card {
     padding: 25px;
@@ -1530,6 +1596,19 @@ main {
         width: 100% !important;
     }
     
+    @media (max-width: 600px) {
+        .materials-grid-container .stat-card {
+            flex-direction: column !important;
+            text-align: center !important;
+            padding: 15px !important;
+        }
+        
+        .materials-grid-container .stat-card div:first-child {
+            width: 100% !important;
+            height: 180px !important;
+        }
+    }
+    
     .materials-grid-container .stat-card div:first-child {
         width: 180px !important;
         height: 120px !important;
@@ -1644,21 +1723,24 @@ main {
 
 .sidebar-close {
     display: none;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     cursor: pointer;
     color: var(--text-secondary);
     z-index: 10;
+    transition: var(--transition);
+}
+
+.sidebar-close:hover {
+    color: var(--accent-color);
+    transform: rotate(90deg);
 }
 
 .sidebar .logo {
-    font-size: 1.4rem !important;
+    font-size: 1.1rem !important;
 }
 
 .sidebar .logo img {
-    height: 24px !important;
+    height: 20px !important;
 }
 
 @media (max-width: 1024px) {
@@ -1832,8 +1914,18 @@ main {
 
 @media (max-width: 1150px) {
     .portfolio-grid, .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 30px !important;
+    }
+    
+    /* Center the 3rd card if it's the last one in a 2-column grid */
+    .portfolio-card:last-child:nth-child(odd),
+    .service-card:last-child:nth-child(odd) {
+        grid-column: 1 / span 2 !important;
+        justify-self: center !important;
+        width: 100% !important;
+        max-width: 480px !important;
     }
 }
 
@@ -1844,6 +1936,7 @@ main {
     }
     
     .portfolio-card, .service-card {
+        grid-column: auto !important;
         width: 100% !important;
         max-width: 500px !important;
         margin: 0 auto !important;

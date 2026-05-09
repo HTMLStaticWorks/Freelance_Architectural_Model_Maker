@@ -147,14 +147,14 @@
     <div class="sidebar-overlay" id="sidebar-overlay"></div>
     <div class="dashboard-container">
         <aside class="sidebar">
-            <div class="sidebar-close" id="sidebar-close">&times;</div>
-            <div class="sidebar-logo" style="margin-bottom: 30px; padding: 10px;">
+            <div class="sidebar-logo" style="margin-bottom: 30px; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
                 <div class="logo">
-                    <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+                    <a href="index.html" style="display: flex; align-items: center;">
                         <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img" style="height: 30px;">
                         Arch<span>Craft</span>
                     </a>
                 </div>
+                <div class="sidebar-close" id="sidebar-close" style="position: static; font-size: 1.5rem; cursor: pointer; color: var(--text-secondary);">&times;</div>
             </div>
             <ul>
                 <li><a href="#overview" class="active" data-section="overview">Overview</a></li>
@@ -176,7 +176,7 @@
                 </div>
 
                 <div class="welcome-text">
-                    <h2 style="font-size: 1.2rem; margin: 0; font-weight: 600;">Welcome Back</h2>
+                    <h2 class="welcome-greeting">Welcome Back</h2>
                 </div>
 
                 <div class="dashboard-controls">
