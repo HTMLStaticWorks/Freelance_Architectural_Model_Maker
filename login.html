@@ -159,6 +159,25 @@
             gap: 10px;
             z-index: 1100;
         }
+
+        .form-group input[type="password"] {
+            padding-right: 40px;
+        }
+
+        /* RTL Overrides */
+        html[dir="rtl"] .form-group {
+            text-align: right;
+        }
+
+        html[dir="rtl"] .form-group input[type="password"] {
+            padding-right: 15px;
+            padding-left: 40px;
+        }
+
+        html[dir="rtl"] .toggle-password {
+            right: auto;
+            left: 15px;
+        }
     </style>
 </head>
 <body>

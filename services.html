@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | ArchCraft</title>
+    <title>Services & Pricing | ArchCraft Architectural Models</title>
+    <meta name="description" content="Residential, commercial, urban planning, interior, landscape and concept architectural model making services. View pricing tiers, lead times and delivery details.">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
-
 <body>
     <!-- Header -->
     <header id="main-header">
         <div class="header-container">
             <div class="logo">
-                <a href="index.html" style="display: flex; align-items: center;">
+                <a href="index.html" style="display:flex;align-items:center;">
                     <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img">
                     Arch<span>Craft</span>
                 </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home 1</a></li>
-                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html" class="active">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="home2.html">Materials</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="dashboard.html">Dashboard</a></li>
                     <li><a href="login.html" class="nav-cta">Login</a></li>
@@ -33,130 +32,576 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <button id="theme-toggle" class="toggle-btn">🌙</button>
+                <button id="theme-toggle" class="toggle-btn" title="Toggle Theme">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
                 <button id="rtl-toggle" class="btn-rtl">RTL</button>
                 <div class="hamburger" id="hamburger">
-                    <span>☰</span>
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Section 1: Hero -->
+        <!-- Hero -->
         <section class="hero hero-inner">
-            <div class="hero-bg" style="background-image: url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600');"></div>
+            <div class="hero-bg" style="background-image:url('assets/images/hero_workshop.png');"></div>
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1 class="animate" data-animation="zoom-in">Our Services</h1>
-                <p class="animate" data-animation="fade-in">From rapid concept models to highly detailed presentation masterpieces.</p>
+                <h1 class="animate" data-animation="zoom-in">Services & Model Types</h1>
+                <p class="animate" data-animation="fade-in">Six specialised model-making disciplines — from intimate residential cutaways to large-scale urban master plans.</p>
             </div>
         </section>
 
-        <!-- Section 2: Core Services Details -->
+        <!-- Model Types Strip -->
+        <section style="background:var(--bg-secondary);padding:35px 0;">
+            <div class="container">
+                <div class="model-type-strip">
+                    <span class="model-type-pill">Residential</span>
+                    <span class="model-type-pill">Commercial</span>
+                    <span class="model-type-pill">Urban Planning</span>
+                    <span class="model-type-pill">Interior Detail</span>
+                    <span class="model-type-pill">Landscape</span>
+                    <span class="model-type-pill">Concept Models</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: 6 Model Type Service Cards -->
         <section>
             <div class="container">
-            <div class="section-title">
-                <h2 class="animate" data-animation="slide-right">Specialized Solutions</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card animate" data-animation="slide-up">
-                    <div class="service-image">
-                        <img src="https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg"
-                            alt="Massing Models">
+                <div class="section-title">
+                    <h2 class="animate" data-animation="slide-right">Specialised Model-Making Solutions</h2>
+                    <p style="color:var(--text-secondary);max-width:620px;margin:0 auto;">Each model type follows a tailored process, material palette, and production timeline — all managed personally from brief to delivery.</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Card 1: Residential -->
+                    <div class="service-card animate" data-animation="slide-up">
+                        <div class="service-image">
+                            <img src="assets/images/residential-model.png" alt="Residential Architectural Model">
+                        </div>
+                        <div class="service-content">
+                            <h3>Residential Models</h3>
+                            <span class="service-price-tag">Est. Cost: From $2,200</span>
+                            <p>Villas, apartments, housing developments, and private residences. Perfect for client presentations, planning applications, and developer sales suites.</p>
+                            <ul style="list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:7px;text-align:left;">
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Typical Scale: 1:50 – 1:200</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Materials: Balsa, acrylic, resin, timber</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Lead Time: 2–4 weeks</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="service-content">
-                        <h3>Massing Models</h3>
-                        <p>Focusing on form, volume, and urban context. Ideal for early-stage design approvals and
-                            spatial analysis.</p>
+                    <!-- Card 2: Commercial -->
+                    <div class="service-card animate" data-animation="slide-up">
+                        <div class="service-image">
+                            <img src="assets/images/commercial-model.png" alt="Commercial Architectural Model">
+                        </div>
+                        <div class="service-content">
+                            <h3>Commercial Models</h3>
+                            <span class="service-price-tag">Est. Cost: From $3,500</span>
+                            <p>Office towers, retail complexes, hotels, and mixed-use developments. Ideal for investor pitches, planning enquiries, and marketing exhibitions.</p>
+                            <ul style="list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:7px;text-align:left;">
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Typical Scale: 1:100 – 1:500</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Materials: Frosted acrylic, etched brass, MDF</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Lead Time: 4–6 weeks</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card 3: Urban Planning -->
+                    <div class="service-card animate" data-animation="slide-up">
+                        <div class="service-image">
+                            <img src="assets/images/urban-planning-model.png" alt="Urban Planning Model">
+                        </div>
+                        <div class="service-content">
+                            <h3>Urban Planning Models</h3>
+                            <span class="service-price-tag">Est. Cost: From $4,500</span>
+                            <p>Master plans, city districts, transport corridors, and site context models. Essential tools for planning authority submissions and community consultations.</p>
+                            <ul style="list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:7px;text-align:left;">
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Typical Scale: 1:500 – 1:2000</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Materials: CNC foam, timber, acrylic sheet</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Lead Time: 6–10 weeks</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card 4: Interior -->
+                    <div class="service-card animate" data-animation="slide-up">
+                        <div class="service-image">
+                            <img src="assets/images/interior-model.png" alt="Interior Detail Model">
+                        </div>
+                        <div class="service-content">
+                            <h3>Interior Detail Models</h3>
+                            <span class="service-price-tag">Est. Cost: From $1,800</span>
+                            <p>Cutaway and open-sided models revealing spatial flow, materiality, lighting, and furniture layout. Ideal for interior designers, high-end residential, and hospitality projects.</p>
+                            <ul style="list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:7px;text-align:left;">
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Typical Scale: 1:20 – 1:50</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Materials: Resin, timber, fabric, acrylic</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Lead Time: 3–5 weeks</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card 5: Landscape -->
+                    <div class="service-card animate" data-animation="slide-up">
+                        <div class="service-image">
+                            <img src="assets/images/landscape-model.png" alt="Landscape Architecture Model">
+                        </div>
+                        <div class="service-content">
+                            <h3>Landscape Models</h3>
+                            <span class="service-price-tag">Est. Cost: From $2,800</span>
+                            <p>Terrain, parks, waterfronts, botanical gardens, and ecological infrastructure. CNC-milled topography with hand-applied vegetation and water surfaces.</p>
+                            <ul style="list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:7px;text-align:left;">
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Typical Scale: 1:200 – 1:1000</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Materials: CNC foam, resin, model foliage</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Lead Time: 4–7 weeks</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card 6: Concept -->
+                    <div class="service-card animate" data-animation="slide-up">
+                        <div class="service-image">
+                            <img src="assets/images/concept-model.png" alt="Concept Architectural Model">
+                        </div>
+                        <div class="service-content">
+                            <h3>Concept & Competition Models</h3>
+                            <span class="service-price-tag">Est. Cost: From $800</span>
+                            <p>Abstract and schematic models for design competitions, academic reviews, and early-stage client presentations. Emphasis on form, geometry, and spatial narrative.</p>
+                            <ul style="list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:7px;text-align:left;">
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Typical Scale: Flexible / Conceptual</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Materials: White foam, acrylic, SLA resin</li>
+                                <li style="font-size:0.85rem;color:var(--text-secondary);">⬥ Lead Time: 1–3 weeks</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="service-card animate" data-animation="slide-up">
-                    <div class="service-image">
-                        <img src="https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg"
-                            alt="Marketing Models">
-                    </div>
-                    <div class="service-content">
-                        <h3>Marketing Models</h3>
-                        <p>High-fidelity presentation models with lighting, landscaping, and realistic material
-                            representations.</p>
-                    </div>
-                </div>
-                <div class="service-card animate" data-animation="slide-up">
-                    <div class="service-image">
-                        <img src="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg"
-                            alt="Structural Cutaways">
-                    </div>
-                    <div class="service-content">
-                        <h3>Structural Cutaways</h3>
-                        <p>Exposing the internal engineering and spatial relationships of complex architectural systems.
-                        </p>
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
 
         <!-- Section 3: Material Consulting -->
-        <section style="background: var(--bg-secondary);">
+        <section style="background:var(--bg-secondary);">
             <div class="container row-to-col">
-                <div style="flex: 1; min-width: 300px;" class="animate" data-animation="slide-left">
+                <div style="flex:1;min-width:300px;" class="animate" data-animation="slide-left">
                     <h2>Material Consulting</h2>
-                    <p>Choosing the right material is crucial for conveying design intent. We offer guidance on
-                        selecting between traditional hardwoods, contemporary polymers, and experimental composites.</p>
+                    <p>Choosing the right material is as important as the design itself. I provide detailed material consultation to ensure the model accurately communicates the texture, tone, and character of your building. Physical samples can be sent on request.</p>
                     <ul class="custom-list">
-                        <li>Sustainable Source Timber</li>
-                        <li>UV-Resistant Resin Prints</li>
-                        <li>Precision Etched Metals</li>
+                        <li>Sustainably Sourced Architectural Timbers</li>
+                        <li>UV-Resistant SLA & FDM Resin Prints</li>
+                        <li>Frosted, Clear & Coloured Architectural Acrylics</li>
+                        <li>Precision Laser-Etched Brass & Copper Sheet</li>
+                        <li>Hand-Applied RAL-Code Architectural Paints</li>
+                        <li>Scale Vegetation: Trees, Hedges, Ground Cover</li>
                     </ul>
                 </div>
-                <div style="flex: 1; min-width: 300px;" class="animate" data-animation="zoom-in">
-                    <img src="https://images.pexels.com/photos/7505172/pexels-photo-7505172.jpeg" alt="Materials"
-                        style="border-radius: 12px; box-shadow: 0 30px 60px rgba(0,0,0,0.15);">
+                <div style="flex:1;min-width:300px;" class="animate" data-animation="zoom-in">
+                    <img src="https://images.pexels.com/photos/7505172/pexels-photo-7505172.jpeg" alt="Model making materials" style="border-radius:12px;box-shadow:0 30px 60px rgba(0,0,0,0.15);">
                 </div>
             </div>
         </section>
 
-        <!-- Section 4: Workflow FAQ -->
-        <section>
+        <!-- Section 4: Category Pricing & Live Calculator -->
+        <section id="pricing-calculator-section">
             <div class="container">
-            <div class="section-title">
-                <h2 class="animate" data-animation="zoom-in">Engagement Process</h2>
-            </div>
-            <div class="dropdown-container">
-                <details class="dropdown-item animate" data-animation="slide-up">
-                    <summary>What files are required?</summary>
-                    <p>We primarily work with .3dm (Rhino), .rvt (Revit), and .dwg files. High-resolution PDFs of plans
-                        and elevations are also helpful for double-checking fine details.</p>
-                </details>
-                <details class="dropdown-item animate" data-animation="slide-up">
-                    <summary>What is the typical lead time?</summary>
-                    <p>Lead times vary by complexity. Concept massing models typically take 2 weeks, while highly
-                        detailed marketing or presentation models can take 4-8 weeks depending on the level of detail
-                        required.</p>
-                </details>
-                <details class="dropdown-item animate" data-animation="slide-up">
-                    <summary>Do you offer international shipping?</summary>
-                    <p>Yes, we provide secure, custom-crated shipping worldwide. We use white-glove delivery partners to
-                        ensure your model arrives in perfect condition, regardless of its destination.</p>
-                </details>
-                <details class="dropdown-item animate" data-animation="slide-up">
-                    <summary>How do I request a quote?</summary>
-                    <p>Simply navigate to our Contact page and provide your project details, including scale, preferred
-                        materials, and any deadline constraints. We will provide a detailed proposal within 48 hours.
-                    </p>
-                </details>
-            </div>
+                <div class="section-title">
+                    <h2 class="animate" data-animation="zoom-in">Package Pricing by Category</h2>
+                    <p style="color:var(--text-secondary);max-width:620px;margin:0 auto 20px;">I offer transparent, project-type specific pricing guides. Select a category below to view standard packages, typical scales, and lead times.</p>
+                </div>
+
+                <!-- Tabs Navigation -->
+                <div class="pricing-tabs animate" data-animation="fade-in">
+                    <button class="pricing-tab-btn active" data-category="residential">Residential</button>
+                    <button class="pricing-tab-btn" data-category="commercial">Commercial</button>
+                    <button class="pricing-tab-btn" data-category="urban">Urban Planning</button>
+                    <button class="pricing-tab-btn" data-category="interior">Interior Detail</button>
+                    <button class="pricing-tab-btn" data-category="concept">Concept &amp; Competition</button>
+                </div>
+
+                <!-- Tab Panes -->
+                <div class="pricing-panes-wrapper animate" data-animation="slide-up">
+                    
+                    <!-- Pane 1: Residential -->
+                    <div class="pricing-pane active" id="pane-residential">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div class="package-header">
+                                    <h3>Essential Presentation</h3>
+                                    <span class="pricing-price">From $2,200</span>
+                                    <span class="pricing-period">Typical Scale: 1:100 – 1:200</span>
+                                </div>
+                                <p class="package-desc">Clean, high-fidelity massing and facade models focusing on form and layout. Perfect for planning applications and design reviews.</p>
+                                <ul class="pricing-features">
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Balsa, acrylic and timber construct</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Monochrome or dual-tone styling</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Standard timber presentation board</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>2–3 weeks lead time</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Standard crate delivery</li>
+                                </ul>
+                                <a href="contact.html?type=Residential&package=Essential" class="btn btn-secondary package-cta">Select Package</a>
+                            </div>
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Recommended</div>
+                                <div class="package-header">
+                                    <h3>Exhibition Masterpiece</h3>
+                                    <span class="pricing-price">From $4,800</span>
+                                    <span class="pricing-period">Typical Scale: 1:50 – 1:100</span>
+                                </div>
+                                <p class="package-desc">Hyper-realistic textures, detailed landscaping, and integrated lighting systems. Tailored for marketing suites and public exhibitions.</p>
+                                <ul class="pricing-features">
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Full color &amp; realistic cladding</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Internal LED warm glow integration</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Custom acrylic dust cover</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>3–5 weeks lead time</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>White-glove courier shipping</li>
+                                </ul>
+                                <a href="contact.html?type=Residential&package=Exhibition" class="btn btn-primary package-cta" style="background:var(--accent-color);">Select Package</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pane 2: Commercial -->
+                    <div class="pricing-pane" id="pane-commercial">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div class="package-header">
+                                    <h3>Core &amp; Facade</h3>
+                                    <span class="pricing-price">From $3,500</span>
+                                    <span class="pricing-period">Typical Scale: 1:200 – 1:500</span>
+                                </div>
+                                <p class="package-desc">Focuses on building envelope, floor plates, and structural design. Ideal for planning enquiries and developer pitches.</p>
+                                <ul class="pricing-features">
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Laser-etched acrylic facade detail</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Frosted glass effect glazing</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Matte black/grey context buildings</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>4–5 weeks lead time</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Standard wooden travel crate</li>
+                                </ul>
+                                <a href="contact.html?type=Commercial&package=Essential" class="btn btn-secondary package-cta">Select Package</a>
+                            </div>
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Recommended</div>
+                                <div class="package-header">
+                                    <h3>Premium Development</h3>
+                                    <span class="pricing-price">From $7,500</span>
+                                    <span class="pricing-period">Typical Scale: 1:100 – 1:200</span>
+                                </div>
+                                <p class="package-desc">Exhibition-grade tower model featuring detailed lobby interiors, zoning lights, and custom display podium.</p>
+                                <ul class="pricing-features">
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Bespoke brass &amp; metal details</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Multi-circuit LED lighting system</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Branded presentation podium</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>5–7 weeks lead time</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Custom flight case + art shipping</li>
+                                </ul>
+                                <a href="contact.html?type=Commercial&package=Exhibition" class="btn btn-primary package-cta" style="background:var(--accent-color);">Select Package</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pane 3: Urban Planning -->
+                    <div class="pricing-pane" id="pane-urban">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div class="package-header">
+                                    <h3>Contextual Masterplan</h3>
+                                    <span class="pricing-price">From $4,500</span>
+                                    <span class="pricing-period">Typical Scale: 1:1000 – 1:2000</span>
+                                </div>
+                                <p class="package-desc">Clean representation of topography and building blocks, highlighting site relations and spatial flow.</p>
+                                <ul class="pricing-features">
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>CNC foam or birch ply terrain</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Minimalistic block massings</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Target project highlighted in color</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>6–8 weeks lead time</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Secure crated delivery</li>
+                                </ul>
+                                <a href="contact.html?type=Urban%20Planning&package=Essential" class="btn btn-secondary package-cta">Select Package</a>
+                            </div>
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Recommended</div>
+                                <div class="package-header">
+                                    <h3>Smart District Masterplan</h3>
+                                    <span class="pricing-price">From $9,000</span>
+                                    <span class="pricing-period">Typical Scale: 1:500 – 1:1000</span>
+                                </div>
+                                <p class="package-desc">Exhibition masterpiece featuring complex terrain, detailed context, and interactive smart lighting for zoning.</p>
+                                <ul class="pricing-features">
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>CNC milled high-fidelity topography</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Interactive LED lighting by zoning</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Premium timber frame &amp; glass cover</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>8–12 weeks lead time</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Specialist art courier logistics</li>
+                                </ul>
+                                <a href="contact.html?type=Urban%20Planning&package=Exhibition" class="btn btn-primary package-cta" style="background:var(--accent-color);">Select Package</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pane 4: Interior Detail -->
+                    <div class="pricing-pane" id="pane-interior">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div class="package-header">
+                                    <h3>Spatial Cutaway</h3>
+                                    <span class="pricing-price">From $1,800</span>
+                                    <span class="pricing-period">Typical Scale: 1:30 – 1:50</span>
+                                </div>
+                                <p class="package-desc">Open-top or sectional model showcasing wall layouts, furniture spacing, and spatial flow.</p>
+                                <ul class="pricing-features">
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Resin-printed basic furniture</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Clean acrylic partition walls</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Sturdy base board with logo</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>3–4 weeks lead time</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Standard secure box packaging</li>
+                                </ul>
+                                <a href="contact.html?type=Interior%20Detail&package=Essential" class="btn btn-secondary package-cta">Select Package</a>
+                            </div>
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Recommended</div>
+                                <div class="package-header">
+                                    <h3>Bespoke Interior Scene</h3>
+                                    <span class="pricing-price">From $3,500</span>
+                                    <span class="pricing-period">Typical Scale: 1:10 – 1:25</span>
+                                </div>
+                                <p class="package-desc">Hyper-realistic textures, finishes (fabrics, wood veneers), detailed custom micro-furniture, and functional light fixtures.</p>
+                                <ul class="pricing-features">
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Authentic material textures</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Miniature ceiling &amp; wall lights</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Acrylic display box included</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>4–5 weeks lead time</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Crated white-glove courier</li>
+                                </ul>
+                                <a href="contact.html?type=Interior%20Detail&package=Exhibition" class="btn btn-primary package-cta" style="background:var(--accent-color);">Select Package</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pane 5: Concept & Competition -->
+                    <div class="pricing-pane" id="pane-concept">
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div class="package-header">
+                                    <h3>Design Massing Study</h3>
+                                    <span class="pricing-price">From $800</span>
+                                    <span class="pricing-period">Typical Scale: Variable</span>
+                                </div>
+                                <p class="package-desc">Rapid concept massing for early layout reviews, block studies, and architectural form validation.</p>
+                                <ul class="pricing-features">
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>SLS/SLA monochrome prints</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Minimalistic acrylic base</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Sleek design representation</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>1–2 weeks lead time</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Courier parcel shipping</li>
+                                </ul>
+                                <a href="contact.html?type=Concept%20%26%20Competition&package=Essential" class="btn btn-secondary package-cta">Select Package</a>
+                            </div>
+                            <div class="pricing-card featured">
+                                <div class="pricing-badge">Recommended</div>
+                                <div class="package-header">
+                                    <h3>Competition Highlight</h3>
+                                    <span class="pricing-price">From $1,800</span>
+                                    <span class="pricing-period">Typical Scale: Variable</span>
+                                </div>
+                                <p class="package-desc">High-contrast, artistic material combinations designed to make a strong visual statement in design panels.</p>
+                                <ul class="pricing-features">
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Acrylic, timber &amp; brass mix</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Sculptural form detailing</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Bespoke dark walnut base</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>2–3 weeks lead time</li>
+                                    <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Specialist express shipping</li>
+                                </ul>
+                                <a href="contact.html?type=Concept%20%26%20Competition&package=Exhibition" class="btn btn-primary package-cta" style="background:var(--accent-color);">Select Package</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Interactive Quote Calculator Section -->
+                <div class="calculator-container animate" data-animation="slide-up">
+                    <div class="calculator-title">
+                        <h3>Interactive Project Cost Estimator</h3>
+                        <p>Configure your model specifications below for an instant estimated budget range and lead time proposal.</p>
+                    </div>
+                    
+                    <div class="calculator-layout">
+                        <!-- Left Panel: Inputs -->
+                        <div class="calc-panel-inputs">
+                            <div class="calc-group">
+                                <label for="calc-category">Project Category</label>
+                                <select id="calc-category" class="calc-select">
+                                    <option value="concept">Concept &amp; Competition Models</option>
+                                    <option value="interior">Interior Detail Models</option>
+                                    <option value="residential" selected>Residential Models</option>
+                                    <option value="commercial">Commercial Models</option>
+                                    <option value="urban">Urban Planning Models</option>
+                                </select>
+                            </div>
+
+                            <div class="calc-group">
+                                <label>Model Size / Base Board</label>
+                                <div class="calc-radio-group">
+                                    <label class="calc-radio-label">
+                                        <input type="radio" name="calc-size" value="small" class="calc-radio">
+                                        <span><strong>Small</strong><br>Up to 40x40cm</span>
+                                    </label>
+                                    <label class="calc-radio-label">
+                                        <input type="radio" name="calc-size" value="medium" checked class="calc-radio">
+                                        <span><strong>Medium</strong><br>Up to 70x70cm</span>
+                                    </label>
+                                    <label class="calc-radio-label">
+                                        <input type="radio" name="calc-size" value="large" class="calc-radio">
+                                        <span><strong>Large</strong><br>100x100cm+</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="calc-group">
+                                <label>Fidelity &amp; Detail Level</label>
+                                <div class="calc-radio-group">
+                                    <label class="calc-radio-label">
+                                        <input type="radio" name="calc-detail" value="concept" class="calc-radio">
+                                        <span><strong>Concept Massing</strong><br>Monochrome / Abstract</span>
+                                    </label>
+                                    <label class="calc-radio-label">
+                                        <input type="radio" name="calc-detail" value="standard" checked class="calc-radio">
+                                        <span><strong>Detailed Presentation</strong><br>Realistic Cladding</span>
+                                    </label>
+                                    <label class="calc-radio-label">
+                                        <input type="radio" name="calc-detail" value="premium" class="calc-radio">
+                                        <span><strong>Hyper-Realistic</strong><br>Museum Exhibition</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="calc-group">
+                                <label>Optional Project Inclusions</label>
+                                <div class="calc-checkbox-group">
+                                    <label class="calc-checkbox-label">
+                                        <input type="checkbox" id="addon-lighting" class="calc-checkbox">
+                                        <span>Integrated LED Lighting (+ $600 - $1,600)</span>
+                                    </label>
+                                    <label class="calc-checkbox-label">
+                                        <input type="checkbox" id="addon-cover" class="calc-checkbox">
+                                        <span>Bespoke Acrylic Dust Cover (+ $350 - $800)</span>
+                                    </label>
+                                    <label class="calc-checkbox-label">
+                                        <input type="checkbox" id="addon-case" class="calc-checkbox">
+                                        <span>Heavy-duty flight transit case (+ $450 - $900)</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Panel: Dynamic Results -->
+                        <div class="calc-panel-results">
+                            <div class="results-header">Estimated Proposal Summary</div>
+                            
+                            <div class="results-details">
+                                <div class="detail-row">
+                                    <span>Base Estimate Range</span>
+                                    <span id="result-base-cost" class="detail-val">$2,200 - $2,750</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span>Selected Inclusions</span>
+                                    <span id="result-addons-cost" class="detail-val">$0</span>
+                                </div>
+                                <div class="detail-row total-row">
+                                    <span>Total Est. Budget Range</span>
+                                    <span id="result-total-cost" class="total-val">$2,200 - $2,750</span>
+                                </div>
+                                <div class="detail-row highlight-row">
+                                    <span>Estimated Lead Time</span>
+                                    <span id="result-lead-time" class="detail-val highlight-val">3 - 5 Weeks</span>
+                                </div>
+                            </div>
+
+                            <div class="results-footer">
+                                <p class="disclaimer-text">Estimated cost ranges are indicative for freelance budgets. Lead times vary depending on my current commissions queue.</p>
+                                <a id="calc-cta-btn" href="contact.html" class="btn btn-primary btn-calc-cta">Request Proposal for this Spec</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- Section 5: CTA -->
-        <section style="background: var(--accent-color); color: #ffffff !important; text-align: center; padding: 100px 0;">
+        <!-- Section 5: Delivery & Freelance Process -->
+        <section style="background:var(--bg-secondary);">
             <div class="container">
-                <h2 class="animate" data-animation="fade-in" style="font-size: 2.5rem; margin-bottom: 20px; color: #ffffff !important;">Ready to bring your vision to life?</h2>
-                <p style="margin-bottom: var(--space-md); color: #ffffff !important; font-size: 1.2rem; opacity: 1;">Contact us for a detailed consultation and quotation.</p>
-                <div class="animate" data-animation="slide-up" style="margin-top: 30px;">
-                    <a href="contact.html" class="btn btn-light">Get a Free Quote</a>
+                <div class="section-title">
+                    <h2 class="animate" data-animation="fade-in">How Freelance Delivery Works</h2>
+                </div>
+                <div class="freelance-process-box animate" data-animation="slide-up">
+                    <h3 style="color:#fff;font-size:1.3rem;margin-bottom:8px;text-align:center;">Your Project Journey — Managed Personally, Start to Finish</h3>
+                    <p style="color:rgba(255,255,255,0.65);text-align:center;max-width:600px;margin:0 auto 10px;font-size:0.92rem;">As a solo model maker, I handle every stage of your project with complete personal accountability.</p>
+                    <div class="freelance-steps">
+                        <div class="freelance-step">
+                            <div class="freelance-step-num">1</div>
+                            <h4>Initial Call</h4>
+                            <p>Brief &amp; scope discussion, timeline and budget alignment</p>
+                        </div>
+                        <div class="freelance-step">
+                            <div class="freelance-step-num">2</div>
+                            <h4>Quote &amp; Contract</h4>
+                            <p>Detailed written proposal, payment terms, milestone schedule</p>
+                        </div>
+                        <div class="freelance-step">
+                            <div class="freelance-step-num">3</div>
+                            <h4>Deposit &amp; Build</h4>
+                            <p>50% deposit confirms the start; regular photo updates throughout</p>
+                        </div>
+                        <div class="freelance-step">
+                            <div class="freelance-step-num">4</div>
+                            <h4>Approval &amp; Balance</h4>
+                            <p>Final photos for sign-off, remaining balance, dispatch scheduled</p>
+                        </div>
+                        <div class="freelance-step">
+                            <div class="freelance-step-num">5</div>
+                            <h4>Crated Delivery</h4>
+                            <p>Custom foam crating, tracked courier, worldwide delivery with insurance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: FAQ -->
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="animate" data-animation="zoom-in">Frequently Asked Questions</h2>
+                </div>
+                <div class="dropdown-container">
+                    <details class="dropdown-item animate" data-animation="slide-up">
+                        <summary>What file formats are required to begin?</summary>
+                        <p>I primarily work with .3dm (Rhino), .rvt (Revit), .dwg (AutoCAD), and .skp (SketchUp) files. High-resolution PDFs of architectural plans and elevations are also helpful for cross-referencing fine details.</p>
+                    </details>
+                    <details class="dropdown-item animate" data-animation="slide-up">
+                        <summary>Do you create both physical and digital models?</summary>
+                        <p>My specialisation is physical scale models — tangible, hand-crafted objects. However, all models begin with digital preparation in Rhino 3D and AutoCAD before physical fabrication begins. I do not produce standalone digital renders, but can recommend trusted visualisation partners.</p>
+                    </details>
+                    <details class="dropdown-item animate" data-animation="slide-up">
+                        <summary>What is the typical lead time for each model type?</summary>
+                        <p>Concept models: 1–2 weeks. Residential presentation models: 2–4 weeks. Commercial and urban planning models: 4–8 weeks. Premium exhibition models: 8–12 weeks. All timelines are confirmed in writing at the quoting stage.</p>
+                    </details>
+                    <details class="dropdown-item animate" data-animation="slide-up">
+                        <summary>Do you ship internationally?</summary>
+                        <p>Yes — I have delivered models to clients in 18 countries across Europe, the Middle East, Asia, and North America. Models are crated in custom foam-lined timber boxes and shipped via specialist art courier services with full transit insurance.</p>
+                    </details>
+                    <details class="dropdown-item animate" data-animation="slide-up">
+                        <summary>Can I visit the studio during the build?</summary>
+                        <p>Studio visits are welcome for Standard and Premium tier projects. For Concept tier projects, weekly photo updates are provided instead. All clients receive regular photographic progress reports throughout the build.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section style="background:var(--accent-color);color:#fff;text-align:center;padding:100px 0;">
+            <div class="container">
+                <h2 class="animate" data-animation="fade-in" style="font-size:2.4rem;margin-bottom:16px;color:#fff;">Ready to Commission Your Model?</h2>
+                <p style="max-width:580px;margin:0 auto 35px;color:rgba(255,255,255,0.88);font-size:1.1rem;">Share your project details and I'll provide a detailed proposal within 48 hours.</p>
+                <div class="animate" data-animation="slide-up">
+                    <a href="contact.html" class="btn btn-light">Request a Proposal</a>
                 </div>
             </div>
         </section>
@@ -167,14 +612,14 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="logo" style="margin-bottom: 20px; display: flex; align-items: center;">
+                    <div class="logo" style="margin-bottom:20px;display:flex;align-items:center;">
                         <img src="assets/images/logo.svg" alt="ArchCraft Logo" class="logo-img">
                         Arch<span>Craft</span>
                     </div>
                     <p>Elevating architectural storytelling through physical precision.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
+                    <h4>Navigation</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -186,29 +631,17 @@
                 <div class="footer-col">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li>📍 123 Artisan Way, Studio 4B</li>
-                        <li>📞 +1 (555) 123-4567</li>
-                        <li>✉️ hello@archcraft.com</li>
+                        <li style="display:flex;align-items:center;gap:10px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>123 Artisan Way, Studio 4B</li>
+                        <li style="display:flex;align-items:center;gap:10px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91A16 16 0 0 0 13 14.83l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16z"/></svg>+1 (555) 123-4567</li>
+                        <li style="display:flex;align-items:center;gap:10px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@archcraft.com</li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Follow Us</h4>
                     <div class="footer-socials">
-                        <a href="#" class="social-icon" title="Instagram">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="social-icon" title="LinkedIn">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="social-icon" title="Twitter">
-                            <svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
-                        </a>
+                        <a href="#" class="social-icon" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                        <a href="#" class="social-icon" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a>
+                        <a href="#" class="social-icon" title="Twitter/X"><svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -221,5 +654,4 @@
     <button id="back-to-top" title="Back to Top">↑</button>
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>

@@ -99,15 +99,17 @@
                             </div>
                             <div style="margin-bottom: 20px;">
                                 <label style="display: block; margin-bottom: 8px; font-weight: 500;">Project Type</label>
-                                <select style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 4px; background: var(--bg-primary); color: var(--text-primary);">
-                                    <option>Residential</option>
-                                    <option>Commercial</option>
-                                    <option>Urban Planning</option>
+                                <select id="contact-project-type" style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 4px; background: var(--bg-primary); color: var(--text-primary);">
+                                    <option value="Concept & Competition">Concept &amp; Competition</option>
+                                    <option value="Interior Detail">Interior Detail</option>
+                                    <option value="Residential">Residential</option>
+                                    <option value="Commercial">Commercial</option>
+                                    <option value="Urban Planning">Urban Planning</option>
                                 </select>
                             </div>
                             <div style="margin-bottom: 20px;">
                                 <label style="display: block; margin-bottom: 8px; font-weight: 500;">Message</label>
-                                <textarea rows="5" style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 4px; background: var(--bg-primary); color: var(--text-primary);"></textarea>
+                                <textarea id="contact-message" rows="5" style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 4px; background: var(--bg-primary); color: var(--text-primary);"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
                         </form>
