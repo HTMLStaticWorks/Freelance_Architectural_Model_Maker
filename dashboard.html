@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Dashboard | ArchCraft</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.1">
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
         .dashboard-container {
@@ -44,10 +44,21 @@
         }
         
         .sidebar ul li a {
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: 12px;
             padding: 12px 20px;
             border-radius: 4px;
             font-weight: 500;
+        }
+
+        .sidebar-icon {
+            width: 18px;
+            height: 18px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+            transition: var(--transition);
         }
         
         .sidebar ul li a.active,
@@ -172,14 +183,14 @@
                 <div class="sidebar-close" id="sidebar-close" style="position: static; font-size: 1.5rem; cursor: pointer; color: var(--text-secondary);">&times;</div>
             </div>
             <ul>
-                <li><a href="#overview" class="active" data-section="overview">Overview</a></li>
-                <li><a href="#upload" data-section="upload">Upload Files</a></li>
-                <li><a href="#materials" data-section="materials">Materials</a></li>
-                <li><a href="#progress" data-section="progress">Progress</a></li>
-                <li><a href="#messages" data-section="messages">Messages</a></li>
-                <li><a href="#settings" data-section="settings">Settings</a></li>
+                <li><a href="#overview" class="active" data-section="overview"><svg class="sidebar-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1"></rect><rect x="14" y="3" width="7" height="5" rx="1"></rect><rect x="14" y="12" width="7" height="9" rx="1"></rect><rect x="3" y="16" width="7" height="5" rx="1"></rect></svg> Overview</a></li>
+                <li><a href="#upload" data-section="upload"><svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg> Upload Files</a></li>
+                <li><a href="#materials" data-section="materials"><svg class="sidebar-icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg> Materials</a></li>
+                <li><a href="#progress" data-section="progress"><svg class="sidebar-icon" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg> Progress</a></li>
+                <li><a href="#messages" data-section="messages"><svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> Messages</a></li>
+                <li><a href="#settings" data-section="settings"><svg class="sidebar-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Settings</a></li>
                 <li style="margin-top: 50px; border-top: 1px solid var(--border-color); padding-top: 20px;">
-                    <a href="index.html" class="logout-btn">LOGOUT</a>
+                    <a href="index.html" class="logout-btn"><svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> LOGOUT</a>
                 </li>
             </ul>
         </aside>
@@ -282,21 +293,21 @@
                 
                 <div class="skills-grid materials-grid-container">
                     <div class="stat-card">
-                        <div style="width: 100%; height: 120px; background: #eee; border-radius: 4px; margin-bottom: 15px; overflow: hidden;">
+                        <div style="width: 100%; height: 180px; background: #eee; overflow: hidden;">
                             <img src="https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg" style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <h4>Natural Oak</h4>
                         <p style="font-size: 0.9rem;">Primary base material with satin finish.</p>
                     </div>
                     <div class="stat-card">
-                        <div style="width: 100%; height: 120px; background: #eee; border-radius: 4px; margin-bottom: 15px; overflow: hidden;">
+                        <div style="width: 100%; height: 180px; background: #eee; overflow: hidden;">
                             <img src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg" style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <h4>Frosted Acrylic</h4>
                         <p style="font-size: 0.9rem;">Used for facade glazing elements.</p>
                     </div>
                     <div class="stat-card">
-                        <div style="width: 100%; height: 120px; background: #eee; border-radius: 4px; margin-bottom: 15px; overflow: hidden;">
+                        <div style="width: 100%; height: 180px; background: #eee; overflow: hidden;">
                             <img src="https://images.pexels.com/photos/220926/pexels-photo-220926.jpeg" style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <h4>Etched Brass</h4>
@@ -357,8 +368,18 @@
                     </div>
                     
                     <div style="border-top: 1px solid var(--border-color); padding-top: 20px;">
-                        <textarea placeholder="Type your message here..." style="width: 100%; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: 15px; color: var(--text-primary); font-family: inherit; margin-bottom: 15px; resize: none;" rows="3"></textarea>
-                        <button class="btn btn-primary">Send Message</button>
+                        <div style="display: flex; align-items: center; gap: 10px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: 8px 12px;">
+                            <!-- Attach File Icon -->
+                            <button type="button" style="background: none; border: none; color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; padding: 6px; transition: var(--transition);" title="Attach File" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-secondary)'">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
+                                </svg>
+                            </button>
+                            <!-- Text Input Box -->
+                            <input type="text" placeholder="Type your message here..." style="flex: 1; background: none; border: none; color: var(--text-primary); font-family: inherit; font-size: 0.95rem; outline: none; padding: 5px 0;">
+                            <!-- Send Button -->
+                            <button class="btn btn-primary" style="padding: 8px 18px; font-size: 0.8rem; letter-spacing: 0.5px; border-radius: 6px; flex-shrink: 0; min-width: auto; width: auto; height: auto;">Send</button>
+                        </div>
                     </div>
                 </div>
             </div>

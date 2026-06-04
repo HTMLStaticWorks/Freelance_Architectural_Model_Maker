@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Update URL hash without jumping
                 history.pushState(null, null, `#${targetSectionId}`);
                 
+                // Scroll to top on section change
+                window.scrollTo({ top: 0, behavior: 'auto' });
+
                 // Close sidebar on mobile after selection
                 if (window.innerWidth <= 992) {
                     dashboardSidebar.classList.remove('active');
