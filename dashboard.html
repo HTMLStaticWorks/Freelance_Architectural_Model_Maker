@@ -347,7 +347,7 @@
                 <h2>Artisan Correspondence</h2>
                 <p style="margin-bottom: 30px;">Direct communication with your lead model maker.</p>
                 
-                <div style="background: var(--bg-secondary); border-radius: 12px; padding: 30px; border: 1px solid var(--border-color);">
+                <div class="chat-container-card" style="background: var(--bg-secondary); border-radius: 12px; padding: 30px; border: 1px solid var(--border-color);">
                     <div style="margin-bottom: 30px;">
                         <div style="display: flex; gap: 15px; align-items: flex-start; margin-bottom: 20px;">
                             <div style="width: 40px; height: 40px; background: var(--accent-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">A</div>
@@ -368,7 +368,7 @@
                     </div>
                     
                     <div style="border-top: 1px solid var(--border-color); padding-top: 20px;">
-                        <div style="display: flex; align-items: center; gap: 10px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: 8px 12px;">
+                        <div class="chat-input-bar" style="display: flex; align-items: center; gap: 10px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: 8px 12px;">
                             <!-- Attach File Icon -->
                             <button type="button" style="background: none; border: none; color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; padding: 6px; transition: var(--transition);" title="Attach File" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-secondary)'">
                                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -378,7 +378,7 @@
                             <!-- Text Input Box -->
                             <input type="text" placeholder="Type your message here..." style="flex: 1; background: none; border: none; color: var(--text-primary); font-family: inherit; font-size: 0.95rem; outline: none; padding: 5px 0;">
                             <!-- Send Button -->
-                            <button class="btn btn-primary" style="padding: 8px 18px; font-size: 0.8rem; letter-spacing: 0.5px; border-radius: 6px; flex-shrink: 0; min-width: auto; width: auto; height: auto;">Send</button>
+                            <button class="btn btn-primary chat-send-btn" style="padding: 8px 18px; font-size: 0.8rem; letter-spacing: 0.5px; border-radius: 6px; flex-shrink: 0; min-width: auto; width: auto; height: auto;">Send</button>
                         </div>
                     </div>
                 </div>
