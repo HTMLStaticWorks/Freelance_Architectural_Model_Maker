@@ -388,9 +388,36 @@ nav ul li a.nav-cta:hover {
 }
 
 .hero.hero-inner {
-    height: 55vh;
-    min-height: 400px;
-    padding-top: 100px;
+    height: auto !important;
+    min-height: 0 !important;
+    padding-top: 140px !important;
+    padding-bottom: 80px !important;
+    overflow: visible !important;
+    align-items: flex-start !important;
+    background: var(--bg-secondary) !important;
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary);
+}
+
+/* Hide background image and dark overlay on inner page heroes */
+.hero.hero-inner .hero-bg {
+    display: none !important;
+}
+
+.hero.hero-inner .hero-overlay {
+    display: none !important;
+}
+
+/* Inner hero text should use site colors, not white */
+.hero.hero-inner .hero-content h1,
+.hero.hero-inner .hero-content h2 {
+    color: var(--text-primary) !important;
+    text-shadow: none !important;
+}
+
+.hero.hero-inner .hero-content p {
+    color: var(--text-secondary) !important;
+    text-shadow: none !important;
 }
 
 .hero-bg {
@@ -500,6 +527,34 @@ nav ul li a.nav-cta:hover {
     display: block;
 }
 
+/* Home 2 Hero: 1024px – keep 2-col but cap height so image isn't cropped */
+@media (min-width: 901px) and (max-width: 1024px) {
+    .hero-split-home2 {
+        height: auto;
+        max-height: none;
+        min-height: 0;
+        padding-top: 70px;
+    }
+    .hero-split-home2 .hero2-text {
+        padding: 40px 30px 40px 40px;
+        justify-content: center;
+    }
+    .hero-split-home2 .hero2-text h1 {
+        font-size: 2.6rem;
+    }
+    .hero-split-home2 .hero2-image {
+        height: auto;
+        max-height: 560px;
+        align-self: stretch;
+    }
+    .hero-split-home2 .hero2-image img {
+        height: 100%;
+        min-height: 420px;
+        object-fit: cover;
+        object-position: center top;
+    }
+}
+
 @media (max-width: 900px) {
     .hero-split-home2 {
         grid-template-columns: 1fr;
@@ -551,6 +606,14 @@ nav ul li a.nav-cta:hover {
         padding: 100px 0 50px;
     }
 
+    /* hero-inner must NOT inherit the min-height: 70vh from above */
+    .hero.hero-inner {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 140px !important;
+        padding-bottom: 80px !important;
+    }
+
     .hero h1 {
         font-size: 3.5rem !important;
     }
@@ -568,9 +631,10 @@ nav ul li a.nav-cta:hover {
     }
 
     .hero.hero-inner {
-        min-height: 420px;
-        height: 60vh;
-        padding-top: 80px;
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 120px !important;
+        padding-bottom: 60px !important;
     }
 
     .hero h1 {
@@ -606,8 +670,10 @@ nav ul li a.nav-cta:hover {
     }
 
     .hero.hero-inner {
-        min-height: 380px !important;
-        height: 55vh !important;
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 110px !important;
+        padding-bottom: 50px !important;
     }
 }
 
@@ -1363,7 +1429,9 @@ main {
 
     .hero-inner {
         height: auto !important;
-        padding: 100px 0 50px !important;
+        min-height: 0 !important;
+        padding-top: 110px !important;
+        padding-bottom: 50px !important;
     }
 
     .hero img[style*="clip-path"] {
@@ -2500,7 +2568,7 @@ main {
 .hero-split-home{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;min-height:82vh;padding-top:100px;padding-bottom:60px}
 .hero-split-home .hero-text h1{font-size:3.8rem;font-weight:580;line-height:1.1;margin-bottom:20px;color:var(--text-primary);text-shadow:none}
 .hero-split-home .hero-text p{font-size:0.95rem;color:var(--text-secondary);text-shadow:none;max-width:480px;margin-bottom:30px}
-.hero-split-home .cta-btns{justify-content:flex-start;gap:15px}
+.hero-split-home .cta-btns{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;justify-content:flex-start !important;align-items:center !important;gap:12px !important;width:fit-content !important}
 .hero-trust-badges{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:35px}
 .trust-badge{display:flex;align-items:center;gap:8px;font-size:0.8rem;font-weight:450;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.6px}
 .trust-badge svg{width:15px;height:15px;stroke:var(--accent-color);fill:none;stroke-width:2}
@@ -2517,6 +2585,7 @@ main {
     .hero-split-home .hero-text p{font-size:1rem}
     .hero-trust-badges{gap:14px;flex-wrap:wrap}
     .hero-model-image{max-width:100%}
+    .hero-split-home .cta-btns{gap:12px !important}
 }
 
 /* Hero — mobile (≤767px): single-column stacked, centred */
